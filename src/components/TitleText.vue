@@ -29,6 +29,8 @@ const parsedSymbol = computed(() => {
 
 const LevelTag = computed(() => `h${levelNumber.value}`)
 
+const isLevel = (value: number) => levelNumber.value === value
+
 const beforeTextSize = computed(() => ({
     'before:text-7xl': levelNumber.value === 1,
     'before:text-6xl': levelNumber.value === 2,
@@ -44,6 +46,12 @@ const textSize = computed(() => ({
 }))
 
 const styleClasses = computed(() => [
+    {
+        'mb-1': isLevel(4),
+        'mb-5': isLevel(1),
+        'mb-3': isLevel(2),
+        'mb-2': isLevel(3),
+    },
     beforeTextSize.value,
     textSize.value,
 ])
