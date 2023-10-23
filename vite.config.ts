@@ -6,7 +6,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: 'portfolio-vgd-espol',
+    // base: 'portfolio-vgd-espol',
   plugins: [
     vue(),
     vueJsx(),
