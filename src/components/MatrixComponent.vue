@@ -37,7 +37,7 @@ export interface IdeaProps {
 }
 
 withDefaults(defineProps<IdeaProps>(), {
-    columns: emptyArray(),
-    data: emptyArray()
+    columns: () => emptyArray<string>(),
+    data: () => emptyArray<string[]>()
 })
 </script>
