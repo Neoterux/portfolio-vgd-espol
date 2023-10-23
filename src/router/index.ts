@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
@@ -23,7 +23,7 @@ const router = createRouter({
     {
         path: '/matrix',
         name: 'matrix',
-        component: () => import('../views/IdeaMatrix.vue'),
+        component: () => import('@views/IdeaMatrix.vue'),
     },
   ]
 })
